@@ -9,6 +9,9 @@ import reader.message.SetRequest
 
 import scala.concurrent.duration.DurationInt
 
+/**
+ * 直接对new actor，直接对actor发送消息，对比actor属性是否与预期一致
+ */
 class AkkademyDbSpec extends FunSpecLike with Matchers{
 
   implicit val system = ActorSystem()
